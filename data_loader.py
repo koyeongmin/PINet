@@ -47,7 +47,7 @@ class Generator(object):
         self.train_data_three = []
         self.train_data_two = []
 
-        with open("/home/kym/research/autonomous_car_vision/lane_detection/code/Tusimple/fitting/dataset/five.json") as f:
+        with open("dataset/five.json") as f:
             while True:
                 line = f.readline()
                 if not line:
@@ -55,7 +55,7 @@ class Generator(object):
                 jsonString = json.loads(line)
                 self.train_data_five.append(jsonString)
 
-        with open("/home/kym/research/autonomous_car_vision/lane_detection/code/Tusimple/fitting/dataset/four.json") as f:
+        with open("dataset/four.json") as f:
             while True:
                 line = f.readline()
                 if not line:
@@ -63,7 +63,7 @@ class Generator(object):
                 jsonString = json.loads(line)
                 self.train_data_four.append(jsonString)
 
-        with open("/home/kym/research/autonomous_car_vision/lane_detection/code/Tusimple/fitting/dataset/three.json") as f:
+        with open("dataset/three.json") as f:
             while True:
                 line = f.readline()
                 if not line:
@@ -71,7 +71,7 @@ class Generator(object):
                 jsonString = json.loads(line)
                 self.train_data_three.append(jsonString)
 
-        with open("/home/kym/research/autonomous_car_vision/lane_detection/code/Tusimple/fitting/dataset/two.json") as f:
+        with open("dataset/two.json") as f:
             while True:
                 line = f.readline()
                 if not line:
