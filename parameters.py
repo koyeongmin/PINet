@@ -28,7 +28,7 @@ class Parameters():
     K2 = 2.0
     constant_offset = 1.0
     constant_exist = 1.0    #2
-    constant_nonexist = 1.5
+    constant_nonexist = 1.0 # 1.5 last 200epoch
     constant_angle = 1.0
     constant_similarity = 1.0
     constant_alpha = 1.0 #in SGPN paper, they increase this factor by 2 every 5 epochs
@@ -36,7 +36,7 @@ class Parameters():
     constant_gamma = 1.0
     constant_back = 1.0
     constant_l = 1.0
-    constant_lane_loss = 1.5  #10  ######################################
+    constant_lane_loss = 1.0  # 1.5 last 200epoch
     constant_instance_loss = 1.0
 
     #data loader parameter
@@ -51,8 +51,8 @@ class Parameters():
                     ,(18,52),(19,53),(20,54),(21,55),(22,56),(23,57),(24,58),(25,59),(26,60),(27,61),(28,62),(29,63),(30,64),(31,65)
                     ,(32,66),(33,67),(68,68),(69,69),(70,72),(71,73)]
     
-    train_root_url="/home/kym/research/autonomous_car_vision/dataset/TuSimple_dataset/train_set/"
-    test_root_url="/home/kym/research/autonomous_car_vision/dataset/TuSimple_dataset/test_set/"
+    train_root_url="TuSimple_dataset/train_set/"
+    test_root_url="TuSimple_dataset/test_set/"
 
     # test parameter
     color = [(0,0,0), (255,0,0), (0,255,0),(0,0,255),(255,255,0),(255,0,255),(0,255,255),(255,255,255),(100,255,0),(100,0,255),(255,100,0),(0,100,255),(255,0,100),(0,255,100)]
