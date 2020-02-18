@@ -8,8 +8,6 @@
 import math
 import numpy as np
 import cv2
-import matplotlib.pyplot as plt
-#from skimage.transform import rotate as rotate_
 import json
 import random
 from copy import deepcopy
