@@ -45,15 +45,18 @@ Next, you need to change "train_root_url" and "test_root_url" to your "train_set
 
 ```
 # In "parameters.py"
-line 54 : train_root_url="<TuSimple_dataset_path>/train_set/"
-line 55 : test_root_url="<TuSimple_dataset_path>/test_set/"
+line 54 : train_root_url="<tuSimple_dataset_path>/train_set/"
+line 55 : test_root_url="<tuSimple_dataset_path>/test_set/"
 ```
 
 Finally, you can run "fix_dataset.py", and it will generate dataset according to the number of lanes and save dataset in "dataset" directory. (We have uploaded dataset. You can use them.)
             
 ## Test
 We provide trained model, and it is saved in "savefile" directory. You can run "test.py" for testing, and it has some mode like following functions
-- todo
-
+- mode 0 : Visualize results on test set
+- mode 1 : Run the model on the given video. If you want to use this mode, enter your video path at line 63 in "test.py"
+- mode 2 : Run the model on the given image. If you want to use this mode, enter your image path at line 82 in "test.py"
+- mode 3 : Test the model on whole test set, and save result as json file.
+You can change mode at line 22 in "parameters.py".
 
 ## Train
