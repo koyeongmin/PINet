@@ -77,6 +77,7 @@ line 210 : in_x, in_y = eliminate_out(in_x, in_y, confidence, deepcopy(image))
 line 211 : in_x, in_y = util.sort_along_y(in_x, in_y)
 line 212 : in_x, in_y = eliminate_fewer_points(in_x, in_y)
 ```
-You can get around 96.70% accuracy performance with the post-processing and 96.62 without the post-processing.
+You can get around 96.70% accuracy performance with the post-processing and 96.62% without the post-processing.
 
 ## Train
+- todo
