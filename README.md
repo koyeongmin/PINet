@@ -16,7 +16,7 @@
 - ujon (for evaluation)
 
 ## Dataset
-- This code is developed on tuSimple dataset. You can download the dataset from https://github.com/TuSimple/tusimple-benchmark/issues/3. We recommand to make below structure.
+This code is developed on tuSimple dataset. You can download the dataset from https://github.com/TuSimple/tusimple-benchmark/issues/3. We recommand to make below structure.
 
     dataset
       |
@@ -41,12 +41,12 @@
       |------|----test_label.json           # Test Submission Template
       |------|----test_tasks_0627.json      # Test Submission Template
             
-- Next, you need to change "train_root_url" and "test_root_url" to your path in "parameters.py".
-- Finally, you can run "fix_dataset.py", and it will generate dataset according to the number of lanes and save dataset in "dataset" directory. (We have uploaded dataset. You can use them.)
+Next, you need to change "train_root_url" and "test_root_url" to your path in "parameters.py".
+Finally, you can run "fix_dataset.py", and it will generate dataset according to the number of lanes and save dataset in "dataset" directory. (We have uploaded dataset. You can use them.)
             
 ## Test
-- We provide trained model, and it is saved in "savefile" directory. You can run "test.py" for testing, and it has some mode like following functions
--- todo
+We provide trained model, and it is saved in "savefile" directory. You can run "test.py" for testing, and it has some mode like following functions
+- todo
 
 
 ## Train
