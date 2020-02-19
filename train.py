@@ -7,8 +7,6 @@
 import cv2
 import torch
 import visdom
-#import sys
-#sys.path.append('/home/kym/research/autonomous_car_vision/lanedection/code/')
 import agent
 import numpy as np
 from data_loader import Generator
