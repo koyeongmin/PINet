@@ -63,7 +63,7 @@ def Testing():
             cv2.waitKey(0) 
 
     elif p.mode == 1: # check model with video
-        cap = cv2.VideoCapture("/home/kym/research/autonomous_car_vision/lane_detection/code/Tusimple/SGPN_3216/test_data/LocalDataset_Day.mp4")
+        cap = cv2.VideoCapture("video_path")
         while(cap.isOpened()):
             ret, frame = cap.read()
             prevTime = time.time()
