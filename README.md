@@ -41,7 +41,14 @@ This code is developed on tuSimple dataset. You can download the dataset from ht
       |------|----test_label.json           # Test Submission Template
       |------|----test_tasks_0627.json      # Test Submission Template
             
-Next, you need to change "train_root_url" and "test_root_url" to your path in "parameters.py".
+Next, you need to change "train_root_url" and "test_root_url" to your "train_set" and "test_set" directory path in "parameters.py". For example,
+
+```
+# In "parameters.py"
+line 54 : train_root_url="<TuSimple_dataset_path>/train_set/"
+line 55 : test_root_url="<TuSimple_dataset_path>/test_set/"
+```
+
 Finally, you can run "fix_dataset.py", and it will generate dataset according to the number of lanes and save dataset in "dataset" directory. (We have uploaded dataset. You can use them.)
             
 ## Test
