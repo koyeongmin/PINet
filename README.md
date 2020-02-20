@@ -80,4 +80,19 @@ line 212 : in_x, in_y = eliminate_fewer_points(in_x, in_y)
 You can get around 96.70% accuracy performance with the post-processing and 96.62% without the post-processing.
 
 ## Train
-- todo
+If you want to train from scratch, make line 13 blank in "parameters.py", and run "train.py"
+```
+# In "parameters.py"
+line 13 : model_path = ""
+```
+"train.py" will save sample result images(in "test_result/"), trained model(in "savefile/"), and evaluation result for some threshold values(0.3, 0.5, 0.7). However, in the most case, around 0.8 show the best performance.
+
+We recommand to make line 210, 211, 212 of "test.py" as comments when you train the model, because post-processing takes more time.
+
+If you want to train from a trained model, just change following 2 lines.
+```
+# In "parameters.py"
+line 13 : model_path = "<your model path>/"
+# In "test.py"
+line 54 : lane_agent.load_weights(<>, "tensor(<>)")
+```
