@@ -93,6 +93,6 @@ If you want to train from a trained model, just change following 2 lines.
 ```
 # In "parameters.py"
 line 13 : model_path = "<your model path>/"
-# In "test.py"
+# In "train.py"
 line 54 : lane_agent.load_weights(<>, "tensor(<>)")
 ```
