@@ -8,7 +8,7 @@
 
 ## Dependency
 - python ( We tested on python 2.7 )
-- pytorch ( We tested on python 1.0.1 with GPU(RTX2080ti))
+- pytorch ( We tested on pytorch 1.0.1 with GPU(RTX2080ti))
 - opencv
 - numpy
 - visdom (for visualization)
