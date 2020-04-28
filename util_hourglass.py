@@ -46,7 +46,7 @@ class bottleneck(nn.Module):
     def __init__(self, in_channels, out_channels, acti=True):
         super(bottleneck, self).__init__()
         self.acti = acti
-        temp_channels = in_channels/4
+        temp_channels = in_channels//4
         if in_channels < 4:
             temp_channels = in_channels
         self.conv1 = Conv2D_BatchNorm_Relu(in_channels, temp_channels, 1, 0, 1)
@@ -72,7 +72,7 @@ class bottleneck(nn.Module):
 class bottleneck_down(nn.Module):
     def __init__(self, in_channels, out_channels):
         super(bottleneck_down, self).__init__()
-        temp_channels = in_channels/4
+        temp_channels = in_channels//4
         if in_channels < 4:
             temp_channels = in_channels
         self.conv1 = Conv2D_BatchNorm_Relu(in_channels, temp_channels, 1, 0, 1)
@@ -97,7 +97,7 @@ class bottleneck_down(nn.Module):
 class bottleneck_up(nn.Module):
     def __init__(self, in_channels, out_channels):
         super(bottleneck_up, self).__init__()
-        temp_channels = in_channels/4
+        temp_channels = in_channels//4
         if in_channels < 4:
             temp_channels = in_channels
         self.conv1 = Conv2D_BatchNorm_Relu(in_channels, temp_channels,1,  0, 1)
@@ -172,11 +172,11 @@ class hourglass_same(nn.Module):
 class resize_layer(nn.Module):
     def __init__(self, in_channels, out_channels, acti = True):
         super(resize_layer, self).__init__()
-        self.conv = Conv2D_BatchNorm_Relu(in_channels, out_channels/2, 7, 3, 2)
+        self.conv = Conv2D_BatchNorm_Relu(in_channels, out_channels//2, 7, 3, 2)
         self.maxpool = nn.MaxPool2d(2, 2)
-        self.re1 = bottleneck(out_channels/2, out_channels/2)
-        self.re2 = bottleneck(out_channels/2, out_channels/2)
-        self.re3 = bottleneck(out_channels/2, out_channels)
+        self.re1 = bottleneck(out_channels//2, out_channels//2)
+        self.re2 = bottleneck(out_channels//2, out_channels//2)
+        self.re3 = bottleneck(out_channels//2, out_channels)
 
     def forward(self, inputs):
         outputs = self.conv(inputs)
