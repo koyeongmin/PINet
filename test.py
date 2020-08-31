@@ -28,8 +28,14 @@ def Testing():
     #########################################################################
     ## Get dataset
     #########################################################################
-    print("Get dataset")
-    loader = Generator()
+    
+    print("Check mode for dataset")
+    #skip dataset loading if will be tested on special image or video
+    if(p.mode not in [1,2]):
+        loader = Generator()
+        print("Dataset loaded")
+    else:
+        print("Skipped loading dataset")
 
     ##############################
     ## Get agent and model
