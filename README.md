@@ -1,10 +1,8 @@
 # key points estimation and point instance segmentation approach for lane detection
 
-- Paper : key points estimation and point instance segmentation approach for lane detection
-- Paper Link : https://arxiv.org/abs/2002.06604
-- Author : Yeongmin Ko, Jiwon Jun, Donghwuy Ko, Moongu Jeon (Gwanju Institute of Science and Technology)
+- New version is available at https://github.com/koyeongmin/PINet_new
+- Python3, pretrained weights of CULane and TuSimple, and higher performance.
 
-- This repository is pytorch implement of the above paper. Our poposed method, PINet(Point Intance Network), combines key point estimation and point instance segmentation for lane detection. 
 
 ## Dependency
 - python ( We tested on python 2.7 )
